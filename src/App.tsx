@@ -254,7 +254,7 @@ function ScoreRing() {
   const R = 88;
   const C = 2 * Math.PI * R;
   return (
-    <div ref={ref} className="relative shrink-0">
+    <div ref={ref} className="relative mx-auto shrink-0 lg:mx-0">
       <svg width="220" height="220" viewBox="0 0 220 220" className="-rotate-90">
         <circle cx="110" cy="110" r={R} fill="none" stroke="#14110f" strokeOpacity="0.1" strokeWidth="14" />
         <defs>
@@ -302,7 +302,7 @@ function Hero() {
 
         <div className="mt-8 grid grid-cols-1 items-center gap-12 lg:grid-cols-[1fr_auto]">
           <div>
-            <h1 className="text-5xl font-black leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
+            <h1 className="text-4xl font-black leading-[0.98] tracking-tight [hyphens:auto] break-words sm:text-6xl sm:leading-[0.95] lg:text-7xl">
               Evaluación de calidad de{" "}
               <span className="ig-text">Instagram</span>
             </h1>
@@ -666,8 +666,8 @@ function Results() {
         title="Resultados de la evaluación"
         sub="Consolidación final: contribución de cada factor a su capacidad y el puntaje global del producto."
       />
-      <div className="mt-10 overflow-hidden rounded-xl border border-[#14110f]/15">
-        <table className="w-full text-left text-sm">
+      <div className="mt-10 overflow-x-auto rounded-xl border border-[#14110f]/15">
+        <table className="w-full min-w-[560px] text-left text-sm">
           <thead className="bg-[#14110f] text-[#f4f2ec]">
             <tr className="font-mono text-[11px] uppercase tracking-widest">
               <th className="px-4 py-3">Capacidad</th>
