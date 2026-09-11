@@ -181,19 +181,21 @@ const FACTOR_COLS = [
   "Prueba",
 ];
 
+// Índices de columna: 0 Corrección · 1 Confiabilidad · 2 Usabilidad · 3 Integridad
+// 4 Portabilidad · 5 Reusabilidad · 6 Interoperabilidad · 7 Mantenimiento · 8 Flexibilidad · 9 Prueba
 const MATRIX: { metric: string; score: number; cols: number[] }[] = [
-  { metric: "Compleción de las funciones", score: 4, cols: [0, 1] },
-  { metric: "Complejidad", score: 3, cols: [2, 3, 6] },
-  { metric: "Concisión", score: 4, cols: [0] },
-  { metric: "Consistencia", score: 4, cols: [0, 2] },
-  { metric: "Eficiencia de ejecución", score: 3, cols: [0, 1, 3, 4, 6, 7, 9] },
-  { metric: "Estandarización de datos", score: 4, cols: [1, 4, 5, 7] },
-  { metric: "Exactitud de cálculo y control", score: 4, cols: [0] },
-  { metric: "Independencia del software", score: 3, cols: [1, 3, 4, 5, 6, 8] },
-  { metric: "Modularidad", score: 3, cols: [1, 5, 6, 7, 8] },
-  { metric: "Operatividad", score: 4, cols: [2, 7] },
-  { metric: "Seguridad", score: 3, cols: [2, 3, 9] },
-  { metric: "Simplicidad", score: 3, cols: [2, 8, 9] },
+  { metric: "Compleción de las funciones", score: 4, cols: [1, 2] },
+  { metric: "Complejidad", score: 3, cols: [1, 8, 9] },
+  { metric: "Concisión", score: 4, cols: [2] },
+  { metric: "Consistencia", score: 4, cols: [0, 1] },
+  { metric: "Eficiencia de ejecución", score: 3, cols: [1, 2, 3, 4, 7, 8, 9] },
+  { metric: "Estandarización de datos", score: 4, cols: [0, 4, 5, 7] },
+  { metric: "Exactitud de cálculo y control", score: 4, cols: [1] },
+  { metric: "Independencia del software", score: 3, cols: [2, 3, 4, 5, 6, 9] },
+  { metric: "Modularidad", score: 3, cols: [0, 1, 2, 4, 5] },
+  { metric: "Operatividad", score: 4, cols: [0, 2] },
+  { metric: "Seguridad", score: 3, cols: [1, 2, 3] },
+  { metric: "Simplicidad", score: 3, cols: [1, 2, 3] },
 ];
 
 const TOTAL = 81.4;
