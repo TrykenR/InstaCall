@@ -307,13 +307,15 @@ function Hero() {
               <span className="ig-text">Instagram</span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[#14110f]/75">
-              Traducir percepciones subjetivas —“es fácil de usar”, “no falla”— en
-              atributos técnicos medibles. Aplicamos el modelo de McCall al producto
-              final: descomponemos la calidad en{" "}
-              <strong className="font-semibold">factores</strong>,{" "}
-              <strong className="font-semibold">criterios</strong> y{" "}
-              <strong className="font-semibold">métricas</strong> para evaluarla de
-              forma sistemática y objetiva.
+              El modelo utilizado (McCall) es un modelo de evaluación de la calidad
+              del software propuesto por McCall, Richards y Walters (1977). Organiza
+              la calidad en <strong className="font-semibold">11 factores</strong>,
+              agrupados en tres perspectivas:{" "}
+              <strong className="font-semibold">operación del producto</strong>,{" "}
+              <strong className="font-semibold">revisión del producto</strong> y{" "}
+              <strong className="font-semibold">transición del producto</strong>. Su
+              propósito es evaluar diferentes características del software mediante
+              factores, criterios y métricas de calidad.
             </p>
             <div className="mt-8 flex flex-wrap gap-x-8 gap-y-3 font-mono text-sm">
               {CAPACITIES.map((c) => (
