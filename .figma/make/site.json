@@ -1,0 +1,10 @@
+{
+  "description": "This web application evaluates Instagram's user experience by applying McCall's Quality Model, providing measurable insights for engineers to enhance software quality.",
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}

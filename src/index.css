@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700;800&display=swap');
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  font-family: 'Archivo', system-ui, sans-serif;
+  background: #f4f2ec;
+  color: #14110f;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* hide scrollbars until scrolling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+*:hover {
+  scrollbar-color: rgba(20, 17, 15, 0.25) transparent;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+*:hover::-webkit-scrollbar-thumb {
+  background: rgba(20, 17, 15, 0.22);
+}
+
+::selection {
+  background: #14110f;
+  color: #f4f2ec;
+}
+
+.font-mono {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+.ig-gradient {
+  background: linear-gradient(
+    95deg,
+    #feda75 0%,
+    #fa7e1e 22%,
+    #d62976 52%,
+    #962fbf 78%,
+    #4f5bd5 100%
+  );
+}
+.ig-text {
+  background: linear-gradient(95deg, #fa7e1e 0%, #d62976 50%, #962fbf 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
